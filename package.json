@@ -1,0 +1,27 @@
+{
+  "name": "jsonserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard --fix",
+    "start": "nodemon ./index.js",
+    "start:db": "mongod --dbpath=data/db --bind_ip 127.0.0.1"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "author": "Serguey Arellano <sarellano85@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.16.2",
+    "mongoose": "5.0.4",
+    "morgan": "1.9.0",
+    "nodemon": "1.14.12"
+  },
+  "devDependencies": {
+    "pre-commit": "1.2.2",
+    "standard": "10.0.3"
+  }
+}
